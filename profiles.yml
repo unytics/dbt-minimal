@@ -1,0 +1,10 @@
+dbt_minimal:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: bigfunctions
+      dataset: dbt_minimal
+      threads: 4 # Must be a value of 1 or greater
+      location: EU
