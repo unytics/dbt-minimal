@@ -3,10 +3,11 @@
 1. Install dbt for bigquery
 
 ```
-pip install dbt-core dbt-bigquery
+pip install dbt-bigquery
 ```
 
-2. Update `profile.yml` with your own Google Cloud Project (instead of bigfunctions)
+2. Update `profiles.yml` with your Google Cloud variables: `project`, `dataset` and `location`.
+
 
 3. Create source tables by uploading csv seeds
 
