@@ -4,8 +4,6 @@ models:
 
   - name: orders
     description: This table has basic information about orders, as well as some derived facts based on payments
-    config:
-      post_hook:  ["call bigfunctions.eu.export_table_to_datastore('scaledata-dev.dbt_minimal.orders', 'order_id', 'scaledata-dev/default/default/orders')"]    
     columns:
       - name: order_id
         tests:
