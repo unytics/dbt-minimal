@@ -11,8 +11,8 @@ with source as (
 renamed as (
 
     select
-        id as order_id,
-        user_id as customer_id,
+        cast(id as string) as order_id,
+        cast(user_id as string) as customer_id,
         order_date,
         status
 
